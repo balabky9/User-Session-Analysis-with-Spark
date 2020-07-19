@@ -88,7 +88,7 @@ class ElbParser extends Serializable {
       matcher.group(14),
       matcher.group(15),
       matcher.group(16),
-      matcher.group(17),
+      matcher.group(17)
     )
   }
 }
