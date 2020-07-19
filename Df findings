@@ -1,0 +1,9 @@
+1. We should in ideal case use client+port as unique combination to account for effects of NAT translation
+2. We assume a client is new if his ip changes. DHCP means frequent ip change, best way to track session is by assigning unique id using
+cookies. This can be a combination of id+UA etc. 
+3. In the following analysis we can also to improve things use client+port+UA as a way for unique clients but this approach is slightly messy
+as UA needs to be processed into some standard way for comparisons. 
+4. For unique URLs ideally we should have a pattern to get rid of static content URLs. In basic case we can remove urls ending in for ex
+.jpg, .css, .js, .png etc. 
+5. Cache DFs appropriately. If DF is large like 500mb and you are working on local machine be careful with caching as you might use all of your memory
+
